@@ -1,0 +1,79 @@
+{
+    "name": "JJ_Extension_Registration",
+    "fantasyName": "JJ Registration Extension",
+    "vendor": "JJ",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "This is an extension to create a Registration Form!",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": [
+                "img/minbg.jpg"
+            ]
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": [
+                "services/ExtensionRegistration.Service.ss"
+            ]
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ExtensionRegistration/Configuration/ExtensionRegistration.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ExtensionRegistration/Sass/_jj_extension_registration-extensionregistration.scss"
+        },
+        "files": [
+            "Modules/ExtensionRegistration/Sass/_jj_extension_registration-extensionregistration.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ExtensionRegistration/Templates/jj_jj_extension_registration_extensionregistration.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "shopping": "Modules/ExtensionRegistration/JavaScript/JJ.JJ_Extension_Registration.ExtensionRegistration.js"
+        },
+        "application": {
+            "shopping": {
+                "files": [
+                    "Modules/ExtensionRegistration/JavaScript/JJ.JJ_Extension_Registration.ExtensionRegistration.js",
+                    "Modules/ExtensionRegistration/JavaScript/ExtensionRegistration.View.js",
+                    "Modules/ExtensionRegistration/JavaScript/JJ.JJ_Extension_Registration.ExtensionRegistration.Model.js",
+                    "Modules/ExtensionRegistration/JavaScript/JJ.JJ_Extension_Registration.ExtensionRegistration.SS2Model.js"
+                ]
+            }
+        }
+    },
+    "ssp-libraries": {
+        "entry_point": "Modules/ExtensionRegistration/SuiteScript/JJ.JJ_Extension_Registration.ExtensionRegistration.js",
+        "files": [
+            "Modules/ExtensionRegistration/SuiteScript/JJ.JJ_Extension_Registration.ExtensionRegistration.js",
+            "Modules/ExtensionRegistration/SuiteScript/ExtensionRegistration.ServiceController.js"
+        ]
+    },
+    "local_folder": "Workspace\\JJ_Extension_Registration",
+    "suitescript2": {
+        "files": [
+            "Modules/ExtensionRegistration/SuiteScript2/ExtensionRegistration.Service.ss"
+        ]
+    }
+}
